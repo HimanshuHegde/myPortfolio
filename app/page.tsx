@@ -283,6 +283,13 @@ export default function Portfolio() {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a
+                  href="#about"
+                  className="text-gray-300 hover:text-emerald-400 transition-all duration-300 font-medium relative group"
+                >
+                  About
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a
                   href="#projects"
                   className="text-gray-300 hover:text-emerald-400 transition-all duration-300 font-medium relative group"
                 >
@@ -303,13 +310,7 @@ export default function Portfolio() {
                   Experience
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a
-                  href="#about"
-                  className="text-gray-300 hover:text-emerald-400 transition-all duration-300 font-medium relative group"
-                >
-                  About
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                
                 <a
                   href="#contact"
                   className="text-gray-300 hover:text-emerald-400 transition-all duration-300 font-medium relative group"
@@ -338,6 +339,13 @@ export default function Portfolio() {
                     Home
                   </a>
                   <a
+                    href="#about"
+                    className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    About
+                  </a>
+                  <a
                     href="#projects"
                     className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
                     onClick={() => setIsMenuOpen(false)}
@@ -358,13 +366,7 @@ export default function Portfolio() {
                   >
                     Experience
                   </a>
-                  <a
-                    href="#about"
-                    className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    About
-                  </a>
+                  
                   <a
                     href="#contact"
                     className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
@@ -444,7 +446,7 @@ export default function Portfolio() {
 
          {/* About Section */}
           <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in-up">
                   <span className="bg-gradient-to-r from-violet-400 to-emerald-400 bg-clip-text text-transparent">
@@ -748,11 +750,11 @@ export default function Portfolio() {
         </section>
 
         {/* Footer */}
-        <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900/50 border-t border-gray-800/50">
+        {/* <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900/50 border-t border-gray-800/50">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-gray-500">© 2024 Himanshu Hegde. Built with Next.js and Tailwind CSS.</p>
           </div>
-        </footer>
+        </footer> */}
       </div>
     </div>
   )
