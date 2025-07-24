@@ -1,4 +1,7 @@
 import type { Metadata } from 'next'
+import SplashCursor from '@/components/ui/test'
+
+
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -34,7 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SplashCursor COLOR_UPDATE_SPEED={1000000}/>
+        {children}</body>
     </html>
   )
 }

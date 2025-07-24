@@ -47,6 +47,7 @@ import {
   SiReact,
   SiCoffeescript,
 } from "react-icons/si"
+import { VscVscode } from "react-icons/vsc";
 
 interface BannerState {
   show: boolean
@@ -137,7 +138,7 @@ export default function Portfolio() {
     { name: "SQL", icon: SiPostgresql },
     { name: "Git", icon: SiGit },
     { name: "GitHub", icon: SiGithub },
-    { name: "VS Code", icon: SiVscodium },
+    { name: "VS Code", icon: VscVscode },
     { name: "Postman", icon: SiPostman },
     { name: "Supabase", icon: SiSupabase },
     { name: "MongoDB", icon: SiMongodb },
@@ -249,6 +250,7 @@ export default function Portfolio() {
         <div className="absolute top-1/2 left-3/4 w-1 h-1 bg-violet-400 rounded-full animate-float-slow opacity-50"></div>
         <div className="absolute top-1/3 right-1/3 w-0.5 h-0.5 bg-emerald-300 rounded-full animate-pulse opacity-30"></div>
         <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-cyan-300 rounded-full animate-float opacity-35"></div>
+        
       </div>
 
       {/* Mouse follower gradient */}
