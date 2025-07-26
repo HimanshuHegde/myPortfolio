@@ -10,4 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Curl your website
-        run: curl -s --retry 3 ${{ secrets.RENDER_URL }}
+        run: curl -I --retry 3 ${{ secrets.RENDER_URL }}/api/ping
+
