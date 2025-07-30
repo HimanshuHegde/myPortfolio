@@ -643,17 +643,6 @@ export default function Portfolio() {
                 </Card>
               ))}
             </div>
-
-            {/* Add a call-to-action for potential employers */}
-            <div className="text-center mt-12 animate-fade-in-up animation-delay-600">
-              <p className="text-gray-400 mb-6">Interested in working together? Let's discuss opportunities!</p>
-              <Button
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-gradient-to-r from-violet-500 to-emerald-500 hover:from-violet-600 hover:to-emerald-600 text-white px-8 py-3 rounded-lg transition-all duration-300 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 hover:scale-105"
-              >
-                Get In Touch
-              </Button>
-            </div>
           </div>
         </section>
 
