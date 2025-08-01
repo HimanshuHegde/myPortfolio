@@ -6,6 +6,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Himanshu Hegde | Full Stack Developer',
+  
   description: 'Portfolio website for Himanshu Hegde, a full stack developer specializing in modern web technologies like React, Node.js, and Next.js.',
   keywords: ['Himanshu Hegde', 'portfolio', 'web developer', 'full stack', 'Next.js', 'React', 'JavaScript'],
   authors: [{ name: 'Himanshu Hegde' }],
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
     ],
     locale: 'en_IN',
     type: 'website',
+  },
+  other: {
+    "google-site-verification" :"5LPwqH_ksVlTHFH9GSPn6q-IYTjwLVi-D_ibabBHcrk",
   },
 }
 
