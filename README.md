@@ -1,6 +1,6 @@
 # Himanshu Hegde Portfolio
 
-Welcome to my portfolio repository! This project showcases my work as a Full Stack Developer with expertise in modern web technologies such as React, Next.js, and Node.js.
+Welcome to my portfolio repository! This project showcases my work as a Full Stack Developer with expertise in modern web technologies.
 
 ## Live Demo
 
@@ -41,14 +41,10 @@ Check out the live version of my portfolio [here](https://himanshu-hegde.is-a.de
 
 ## Technologies Used
 
-- **Frontend**: React, Next.js, Tailwind CSS
-- **Backend**: Node.js, Express
-- **Database**: MongoDB, PostgreSQL
-- **Tools**: TypeScript, Prisma, Storybook
-
-## Deployment
-
-This project is continuously deployed with Vercel. It also includes a GitHub workflow to keep the Render service alive.
+- **Next.js:** React framework for building server-rendered applications
+- **React:** JavaScript library for building user interfaces
+- **Tailwind CSS:** Utility-first CSS framework for styling
+- **Vercel:** Platform for deploying the application
 
 ## Contact
 
