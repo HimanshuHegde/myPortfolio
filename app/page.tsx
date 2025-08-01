@@ -457,7 +457,7 @@ export default function Portfolio() {
               </div>
               <div className="text-lg text-gray-300 leading-relaxed space-y-6 animate-fade-in-up animation-delay-400">
                 <p className="text-center">
-                  Hi! I'm Himanshu, I am a tech enthusiast with a strong interest in both frontend and backend development. I enjoy building
+                  Hi! I'm Himanshu Hegde, I am a tech enthusiast with a strong interest in both frontend and backend development. I enjoy building
                   intuitive user interfaces as much as I enjoy working on the logic and architecture behind them. I'm
                   always eager to learn new technologies and deeply curious about how things work under the hood.
                   Currently pursuing a B.E degree at AJIET (expected 2026), I combine academic learning with hands-on
