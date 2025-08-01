@@ -1,0 +1,60 @@
+# Himanshu Hegde Portfolio
+
+Welcome to my portfolio repository! This project showcases my work as a Full Stack Developer with expertise in modern web technologies such as React, Next.js, and Node.js.
+
+## Live Demo
+
+Check out the live version of my portfolio [here](https://himanshu-hegde.is-a.dev).
+
+## Features
+
+- **Projects**: Highlighting key projects I've worked on, including VidSync and React Epic Trails DS.
+- **Skills**: Displaying the technical skills and tools I use to bring ideas to life.
+- **Work Experience**: Overview of my professional journey, including roles at Kreekarvat Technologies and A J Institute of Medical Sciences and Research Center.
+- **Contact**: Form and contact information for getting in touch.
+  
+## Running Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HimanshuHegde/myportfolio.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Scripts
+
+- `build`: Builds the production-ready application.
+- `dev`: Runs the application in development mode.
+- `lint`: Lints files using ESLint.
+- `start`: Starts the application in production mode.
+
+## Technologies Used
+
+- **Frontend**: React, Next.js, Tailwind CSS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB, PostgreSQL
+- **Tools**: TypeScript, Prisma, Storybook
+
+## Deployment
+
+This project is continuously deployed with Vercel. It also includes a GitHub workflow to keep the Render service alive.
+
+## Contact
+
+Feel free to reach out via email (himanshuhegde797@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/himanshuhegde797/).
+
+---
+
+Thank you for visiting my portfolio!
+
