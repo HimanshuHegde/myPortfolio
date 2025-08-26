@@ -97,7 +97,7 @@ export default function Portfolio() {
       title: "VidSync",
       description:
         " VidSync — Real-time video syncing platform using Next.js and Socket.IO. Enables synchronized playback for group viewing across devices.",
-      techStack: ["React", "Next.js", "WebSocket", "Socket.io", "YouTube Api", "Tailwind"],
+      techStack: ["React", "Next.js", "WebSocket", "Socket.io", "YouTube Api", "Tailwind","Node js"],
       githubUrl: "https://github.com/HimanshuHegde/vidsync",
       liveUrl: "https://vidsync-green.vercel.app",
     },
