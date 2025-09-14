@@ -110,6 +110,14 @@ export default function Portfolio() {
       liveUrl: "https://react-epic-trails-ds.vercel.app/",
     },
     {
+      title: "Email Aggregator ",
+      description:
+        "Developed a real-time email management system with IMAP sync, Elasticsearch-powered search, email sending, and AI-based categorization integrated with Slack/webhooks. ",
+      techStack: ["React", "Prisma ORM", "Tailwind", "PostgreSQL", "Node js","Express js", "Socket.io","gemini api","IMAP connections",  "Nodemailer","Slack notifications", "Webhooks"],
+      githubUrl: "https://github.com/HimanshuHegde/Email-Aggregator",
+      liveUrl: "https://email-aggregator-ten.vercel.app/",
+    },
+    {
       title: "Character Info App ",
       description:
         " User-driven anime character database with edit history, admin approval, and role-based access. Built for adding and managing character details.",
@@ -121,7 +129,7 @@ export default function Portfolio() {
       title: "CPRM-Prototype",
       description:
         "Built a complete hospital management system prototype for UDAL that helps hospitalsmanage patients, resources, and emergencies in real-time.",
-      techStack: ["React", "Express.js", "Tailwind", "node js", "Postgres SQL", "Prisma ORM"],
+      techStack: ["React", "Express.js", "Tailwind", "node js", "PostgreSQL", "Prisma ORM"],
       githubUrl: "https://github.com/HimanshuHegde/CPRM-Prototype",
       liveUrl: "https://centralized-patient-resource-manage.vercel.app/",
     },
@@ -209,8 +217,8 @@ export default function Portfolio() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/Himanshu_Hegde.pdf"
-    link.download = "/Himanshu_Hegde.pdf"
+    link.href = "/Himanshu Hegde.pdf"
+    link.download = "/Himanshu Hegde.pdf"
     link.click()
   }
 
