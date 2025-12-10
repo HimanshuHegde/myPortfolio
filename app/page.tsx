@@ -98,7 +98,7 @@ export default function Portfolio() {
       title: "VidSync",
       description:
         " VidSync — Real-time video syncing platform using Next.js and Socket.IO. Enables synchronized playback for group viewing across devices.",
-      techStack: ["React", "Next.js", "WebSocket", "Socket.io", "YouTube Api", "Tailwind","Node js"],
+      techStack: ["React", "Next.js", "WebSocket", "Socket.io", "YouTube Api", "Tailwind", "Node js"],
       githubUrl: "https://github.com/HimanshuHegde/vidsync",
       liveUrl: "https://vidsync-green.vercel.app",
     },
@@ -114,7 +114,7 @@ export default function Portfolio() {
       title: "Email Aggregator ",
       description:
         "Developed a real-time email management system with IMAP sync, Elasticsearch-powered search, email sending, and AI-based categorization integrated with Slack/webhooks. ",
-      techStack: ["React", "Prisma ORM", "Tailwind", "PostgreSQL", "Node js","Express js", "Socket.io","gemini api","IMAP connections",  "Nodemailer","Slack notifications", "Webhooks","Docker"],
+      techStack: ["React", "Prisma ORM", "Tailwind", "PostgreSQL", "Node js", "Express js", "Socket.io", "gemini api", "IMAP connections", "Nodemailer", "Slack notifications", "Webhooks", "Docker"],
       githubUrl: "https://github.com/HimanshuHegde/Email-Aggregator",
       liveUrl: "https://email-aggregator-ten.vercel.app/",
     },
@@ -168,12 +168,22 @@ export default function Portfolio() {
 
   const workExperience = [
     {
-      company : "UDAL DC FELLOWSHIP",
+      company: "UDAL DC FELLOWSHIP",
       position: "Software Developer Intern",
       duration: "Aug 2025 - Nov 2025",
       location: "Mangaluru",
-      description:"Built a system that powers 72 hospital screens with real-time updates for the blood bank, OT and pharmacy."
-    },{
+      description: "Built a system that powers 72 hospital screens with real-time updates for the blood bank, OT and pharmacy.",
+      achievements: [
+        "Successfully deployed centralized real-time data management system at Wenlock Hospital",
+        "Automated Blood Bank inventory updates from Excel to digital displays",
+        "Automated Pharmacy stock updates with real-time synchronization",
+        "Implemented Kannada transliteration for improved accessibility",
+        "Established modular microservice-based architecture for scalability",
+        "Integrated multiple hospital department modules under one centralized app",
+        "Achieved seamless local network deployment with firewall issue resolution",
+        "Reduced manual operational work and increased transparency and accessibility"
+      ]
+    }, {
       company: "Kreekarvat Technologies",
       position: "Freelance Web Developer",
       duration: "Nov 2024 - Mar 2025",
@@ -234,16 +244,14 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gray-950 text-white relative overflow-hidden">
       {/* Banner Notification */}
       <div
-        className={`fixed top-0 left-0 right-0 z-[100] backdrop-blur-xl transform transition-all duration-500 ease-in-out ${
-          banner.show ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-[100] backdrop-blur-xl transform transition-all duration-500 ease-in-out ${banner.show ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+          }`}
       >
         <div
-          className={`mx-4 mt-4 p-4 rounded-lg shadow-2xl border ${
-            banner.type === "success"
+          className={`mx-4 mt-4 p-4 rounded-lg shadow-2xl border ${banner.type === "success"
               ? "bg-emerald-500/20 border-emerald-400/50 text-emerald-100"
               : "bg-red-500/20 border-red-400/50 text-red-100"
-          }`}
+            }`}
         >
           <div className="flex items-center gap-3 max-w-fit mx-auto">
             {banner.type === "success" ? (
@@ -252,7 +260,7 @@ export default function Portfolio() {
               <AlertCircle className="text-red-400 flex-shrink-0" size={20} />
             )}
             <span className="font-medium">{banner.message}</span>
-           
+
           </div>
         </div>
       </div>
@@ -266,7 +274,7 @@ export default function Portfolio() {
         <div className="absolute top-1/2 left-3/4 w-1 h-1 bg-violet-400 rounded-full animate-float-slow opacity-50"></div>
         <div className="absolute top-1/3 right-1/3 w-0.5 h-0.5 bg-emerald-300 rounded-full animate-pulse opacity-30"></div>
         <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-cyan-300 rounded-full animate-float opacity-35"></div>
-        
+
       </div>
 
       {/* Mouse follower gradient */}
@@ -326,7 +334,7 @@ export default function Portfolio() {
                   Experience
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                
+
                 <a
                   href="#contact"
                   className="text-gray-300 hover:text-emerald-400 transition-all duration-300 font-medium relative group"
@@ -382,7 +390,7 @@ export default function Portfolio() {
                   >
                     Experience
                   </a>
-                  
+
                   <a
                     href="#contact"
                     className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
@@ -460,28 +468,28 @@ export default function Portfolio() {
           </div>
         </section>
 
-         {/* About Section */}
-          <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in-up">
-                  <span className="bg-gradient-to-r from-violet-400 to-emerald-400 bg-clip-text text-transparent">
-                    About Me
-                  </span>
-                </h2>
-                <p className="text-gray-400 animate-fade-in-up animation-delay-200">Get to know me better</p>
-              </div>
-              <div className="text-lg text-gray-300 leading-relaxed space-y-6 animate-fade-in-up animation-delay-400">
-                <p className="text-center">
-                  Hi! I'm Himanshu Hegde, I am a tech enthusiast with a strong interest in both frontend and backend development. I enjoy building
-                  intuitive user interfaces as much as I enjoy working on the logic and architecture behind them. I'm
-                  always eager to learn new technologies and deeply curious about how things work under the hood.
-                  Currently pursuing a B.E degree at AJIET (expected 2026), I combine academic learning with hands-on
-                  practice, aiming to build well-rounded, scalable, and maintainable applications.
-                </p>
-              </div>
+        {/* About Section */}
+        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in-up">
+                <span className="bg-gradient-to-r from-violet-400 to-emerald-400 bg-clip-text text-transparent">
+                  About Me
+                </span>
+              </h2>
+              <p className="text-gray-400 animate-fade-in-up animation-delay-200">Get to know me better</p>
             </div>
-          </section>
+            <div className="text-lg text-gray-300 leading-relaxed space-y-6 animate-fade-in-up animation-delay-400">
+              <p className="text-center">
+                Hi! I'm Himanshu Hegde, I am a tech enthusiast with a strong interest in both frontend and backend development. I enjoy building
+                intuitive user interfaces as much as I enjoy working on the logic and architecture behind them. I'm
+                always eager to learn new technologies and deeply curious about how things work under the hood.
+                Currently pursuing a B.E degree at AJIET (expected 2026), I combine academic learning with hands-on
+                practice, aiming to build well-rounded, scalable, and maintainable applications.
+              </p>
+            </div>
+          </div>
+        </section>
         {/* Projects Section */}
         <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
           <div className="max-w-6xl mx-auto">
@@ -640,7 +648,7 @@ export default function Portfolio() {
                         ))}
                       </ul>
                     </div>
-}
+                    }
                     {experience.technologies && <div>
                       <h4 className="text-white font-medium mb-3">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
@@ -662,7 +670,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-         
+
 
         {/* Contact Section */}
         <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
