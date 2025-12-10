@@ -19,6 +19,7 @@ import {
   Linkedin,
   CheckCircle,
   AlertCircle,
+  Binary,
 } from "lucide-react"
 import {
   SiJavascript,
@@ -113,7 +114,7 @@ export default function Portfolio() {
       title: "Email Aggregator ",
       description:
         "Developed a real-time email management system with IMAP sync, Elasticsearch-powered search, email sending, and AI-based categorization integrated with Slack/webhooks. ",
-      techStack: ["React", "Prisma ORM", "Tailwind", "PostgreSQL", "Node js","Express js", "Socket.io","gemini api","IMAP connections",  "Nodemailer","Slack notifications", "Webhooks"],
+      techStack: ["React", "Prisma ORM", "Tailwind", "PostgreSQL", "Node js","Express js", "Socket.io","gemini api","IMAP connections",  "Nodemailer","Slack notifications", "Webhooks","Docker"],
       githubUrl: "https://github.com/HimanshuHegde/Email-Aggregator",
       liveUrl: "https://email-aggregator-ten.vercel.app/",
     },
@@ -162,10 +163,17 @@ export default function Portfolio() {
     { name: "Storybook", icon: SiStorybook },
     { name: "React Native", icon: SiReact },
     { name: "Tailwind", icon: SiTailwindcss },
+    { name: "ProtoBuf", icon: Binary },
   ]
 
   const workExperience = [
     {
+      company : "UDAL DC FELLOWSHIP",
+      position: "Software Developer Intern",
+      duration: "Aug 2025 - Nov 2025",
+      location: "Mangaluru",
+      description:"Built a system that powers 72 hospital screens with real-time updates for the blood bank, OT and pharmacy."
+    },{
       company: "Kreekarvat Technologies",
       position: "Freelance Web Developer",
       duration: "Nov 2024 - Mar 2025",
@@ -621,10 +629,10 @@ export default function Portfolio() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="mb-6">
+                    {experience.achievements && <div className="mb-6">
                       <h4 className="text-white font-medium mb-3">Key Achievements:</h4>
                       <ul className="space-y-2">
-                        {experience.achievements.map((achievement, achievementIndex) => (
+                        {experience.achievements?.map((achievement, achievementIndex) => (
                           <li key={achievementIndex} className="flex items-start gap-3 text-gray-300">
                             <div className="w-1.5 h-1.5 bg-violet-400 rounded-full mt-2 flex-shrink-0"></div>
                             <span className="leading-relaxed">{achievement}</span>
@@ -632,11 +640,11 @@ export default function Portfolio() {
                         ))}
                       </ul>
                     </div>
-
-                    <div>
+}
+                    {experience.technologies && <div>
                       <h4 className="text-white font-medium mb-3">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
-                        {experience.technologies.map((tech, techIndex) => (
+                        {experience.technologies?.map((tech, techIndex) => (
                           <Badge
                             key={techIndex}
                             variant="secondary"
@@ -646,7 +654,7 @@ export default function Portfolio() {
                           </Badge>
                         ))}
                       </div>
-                    </div>
+                    </div>}
                   </CardContent>
                 </Card>
               ))}
